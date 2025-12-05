@@ -8,7 +8,9 @@ contract Counter {
         number = newNumber;
     }
 
-    function increment() public {
-        number +=10;
+   function increment() public {
+    unchecked {
+        ++number;
     }
+}
 }
